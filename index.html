@@ -34,6 +34,36 @@
     <h2>Projects</h2>
 
     <div class="project">
+      <h3>Modbus Export Processor</h3>
+      <p><em>Private repository — available on request</em></p>
+      <p>
+        A Python-based data processing tool that reads Modbus register definitions from structured Excel files
+        and converts them into a clean, production-ready configuration for Telegraf agent.
+        The program filters alarms and warnings, applies custom byte-order and formatting logic,
+        and automatically generates Modbus input and holding register sections that can be appended
+        directly to an existing <code>telegraf.conf</code>.
+        Designed to streamline industrial data acquisition workflows and reduce manual configuration errors.
+      </p>
+      <p><strong>Tech:</strong> Python, Pandas </p>
+    </div>
+
+    <div class="project">
+      <h3>TIG Stack with Local + Cloud Telegraf Pipelines</h3>
+      <p><em>Private repository — available on request</em></p>
+      <p>
+        A fully containerized monitoring and data ingestion platform based on the TIG stack
+        (Telegraf, InfluxDB, Grafana), designed for environments with unreliable connectivity such as marine networks.
+        The solution runs two Telegraf instances locally: one writes directly into a local InfluxDB for on-site monitoring,
+        while the second forwards the same measurements to a separate cloud InfluxDB instance.
+        Kafka is added as an intermediary between the local and cloud path to buffer telemetry and prevent data loss during
+        intermittent connections or outages, enabling reliable store-and-forward behavior across unstable networks.
+        The project includes automated provisioning of InfluxDB data sources, environment-driven Grafana dashboard templating,
+        secure credential handling, and cross-platform deployment scripts.
+      </p>
+      <p><strong>Tech:</strong> Docker, Telegraf, InfluxDB, Grafana, Kafka, Linux, Cloud - Digital Ocean, Bash/Shell scripts </p>
+    </div>
+
+    <div class="project">
       <h3>Text-to-Speech PDF Processing Pipeline</h3>
       <p><em>Private repository — available on request</em></p>
       <p>
@@ -84,35 +114,7 @@
       </p>
     </div>
 
-    <div class="project">
-      <h3>Modbus Export Processor</h3>
-      <p><em>Private repository — available on request</em></p>
-      <p>
-        A Python-based data processing tool that reads Modbus register definitions from structured Excel files
-        and converts them into a clean, production-ready configuration for Telegraf agent.
-        The program filters alarms and warnings, applies custom byte-order and formatting logic,
-        and automatically generates Modbus input and holding register sections that can be appended
-        directly to an existing <code>telegraf.conf</code>.
-        Designed to streamline industrial data acquisition workflows and reduce manual configuration errors.
-      </p>
-      <p><strong>Tech:</strong> Python, Pandas </p>
-    </div>
 
-    <div class="project">
-      <h3>TIG Stack with Local + Cloud Telegraf Pipelines</h3>
-      <p><em>Private repository — available on request</em></p>
-      <p>
-        A fully containerized monitoring and data ingestion platform based on the TIG stack
-        (Telegraf, InfluxDB, Grafana), designed for environments with unreliable connectivity such as marine networks.
-        The solution runs two Telegraf instances locally: one writes directly into a local InfluxDB for on-site monitoring,
-        while the second forwards the same measurements to a separate cloud InfluxDB instance.
-        Kafka is added as an intermediary between the local and cloud path to buffer telemetry and prevent data loss during
-        intermittent connections or outages, enabling reliable store-and-forward behavior across unstable networks.
-        The project includes automated provisioning of InfluxDB data sources, environment-driven Grafana dashboard templating,
-        secure credential handling, and cross-platform deployment scripts.
-      </p>
-      <p><strong>Tech:</strong> Docker, Telegraf, InfluxDB, Grafana, Kafka, Linux, Cloud - Digital Ocean, Bash/Shell scripts </p>
-    </div>
 
     <!-- 
     <div class="project">
